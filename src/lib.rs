@@ -1,7 +1,12 @@
 //! A library to login to the sis system and get the moodle session
 //!
+//! [![crates.io](https://img.shields.io/crates/v/sis-login.svg)](https://crates.io/crates/sis-login)
+//! [![docs.rs](https://docs.rs/sis-login/badge.svg)](https://docs.rs/sis-login)
+//! [![downloads](https://img.shields.io/crates/d/sis-login.svg)](https://crates.io/crates/sis-login)
+//! [![license](https://img.shields.io/crates/l/sis-login.svg)](https://github.com/0x61nas/sis-login/blob/aurora/LICENSE)
+//!
 //! # Example
-//! ```ignore
+//! ```no_run
 //! use sis_login::Sis;
 //! use sis_login::sis::types::user_type::UserType;
 //!
@@ -34,6 +39,18 @@
 //!```
 //! # Features
 //! * `debug` - Enable debug logs, you still need to use a logger like env_logger and initialize it in your code
+//!
+//! # Contributing
+//! I'm happy to accept any contributions, just consider reading the [CONTRIBUTING.md](https://github.com/0x61nas/sis-login/blob/aurora/CONTRIBUTING.md) guide first. to avoid waste waste our time on some unnecessary things.
+//!
+//! > the main keywords are: **signed commits**, **conventional commits**, **no emojis**, **linear history**, **the PR shouldn't have more than tree commits most of the time**
+//!
+//! # License
+//! This project is licensed under [MIT license][mit].
+//!
+//! [mit]: https://github.com/0x61nas/sis-login/blob/aurora/LICENSE
+//!
+//!
 
 pub mod headers_builder;
 pub mod sis;
@@ -91,7 +108,7 @@ impl<'a> Sis<'a> {
     /// * `headers_builder` - The headers builder to use (In most cases you can use the default one or you can create your own if you want more control)
     ///
     /// # Example
-    /// ```!
+    /// ```no_run
     /// # use sis_login::Sis;
     /// # use sis_login::headers_builder::DefaultHeadersBuilder;
     /// # use sis_login::sis::types::user_type::UserType;
@@ -130,7 +147,7 @@ impl<'a> Sis<'a> {
     /// * `usertype` - The type of the user (Student or Staff or System user)
     ///
     /// # Example
-    /// ```ignore
+    /// ```no_run
     /// # use sis_login::Sis;
     /// # use sis_login::sis::types::user_type::UserType;
     ///
@@ -221,7 +238,7 @@ impl<'a> Sis<'a> {
     /// Get Moodle Session URL
     ///
     /// # Example
-    /// ```ignore
+    /// ```no_run
     /// # use sis_login::Sis;
     /// # use sis_login::sis::types::user_type::UserType;
     ///
