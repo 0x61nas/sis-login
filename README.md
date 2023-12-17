@@ -1,6 +1,13 @@
-# sis-login
+<p align="center">
+    <img alt="Lqth logo" src="./lqth.png" width="250">
+</p>
 
 A library to login to the sis system and get the moodle session
+
+[![crates.io](https://img.shields.io/crates/v/sis-login.svg)](https://crates.io/crates/sis-login)
+[![docs.rs](https://docs.rs/sis-login/badge.svg)](https://docs.rs/sis-login)
+[![downloads](https://img.shields.io/crates/d/sis-login.svg)](https://crates.io/crates/sis-login)
+[![license](https://img.shields.io/crates/l/sis-login.svg)](https://github.com/0x61nas/sis-login/blob/aurora/LICENSE)
 
 ## Example
 ```rust
@@ -37,4 +44,22 @@ async fn main() {
 ## Features
 * `debug` - Enable debug logs, you still need to use a logger like env_logger and initialize it in your code
 
-License: MIT OR Apache-2.0
+## Contributing
+I'm happy to accept any contributions, just consider reading the [CONTRIBUTING.md](https://github.com/0x61nas/sis-login/blob/aurora/CONTRIBUTING.md) guide first. to avoid waste waste our time on some unnecessary things.
+
+> the main keywords are: **signed commits**, **conventional commits**, **no emojis**, **linear history**, **the PR shouldn't have more than tree commits most of the time**
+
+## License
+This project is licensed under [MIT license][mit].
+
+[mit]: https://github.com/0x61nas/sis-login/blob/aurora/LICENSE
+
+
+
+## Dependencies graph
+
+![deps graph](./_deps.png)
+
+> Generated with [cargo-depgraph](https://crates.io/crates/cargo-depgraph)
+
+Current version: 0.3.0
