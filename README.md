@@ -1,6 +1,4 @@
-<p align="center">
-    <img alt="Lqth logo" src="./lqth.png" width="250">
-</p>
+# sis-login
 
 A library to login to the sis system and get the moodle session
 
@@ -62,4 +60,4 @@ This project is licensed under [MIT license][mit].
 
 > Generated with [cargo-depgraph](https://crates.io/crates/cargo-depgraph)
 
-Current version: 0.3.0
+Current version: 0.3.1
